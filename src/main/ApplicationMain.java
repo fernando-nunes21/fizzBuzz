@@ -1,10 +1,7 @@
 package main;
 
-public class ApplicationMain implements ApplicationInterface{
+public class ApplicationMain {
+    public static void main(String[] args) {
 
-    public String numberDividedByThree(Integer number) {
-        return null;
     }
-
 }
-
