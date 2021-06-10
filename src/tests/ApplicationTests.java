@@ -9,7 +9,7 @@ public class ApplicationTests extends TestCase {
         assertEquals("Fizz", new FizzBuzz().testNumber(3));
     }
 
-    public void testFizzNumberDividedByThree() {
+    public void testFizzNumberDivisibleByThree() {
         assertEquals("Fizz", new FizzBuzz().testNumber(6));
     }
 
@@ -17,7 +17,7 @@ public class ApplicationTests extends TestCase {
         assertEquals("Buzz", new FizzBuzz().testNumber(5));
     }
 
-    public void testBuzzNumberDividedByFive(){
+    public void testBuzzNumberDivisibleByFive(){
         assertEquals("Buzz", new FizzBuzz().testNumber(10));
     }
 
@@ -35,5 +35,9 @@ public class ApplicationTests extends TestCase {
 
     public void testBuzzNumberFiveInTheString(){
         assertEquals("Buzz", new FizzBuzz().testNumber(52));
+    }
+
+    public void testFizzBuzzDivisibleAndNotDivisible(){
+        assertEquals("FizzBuzz", new FizzBuzz().testNumber(156));
     }
 }
