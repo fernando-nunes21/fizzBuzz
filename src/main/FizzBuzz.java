@@ -26,7 +26,7 @@ public class FizzBuzz implements FizzBuzzInterface {
     }
 
     private String numberDividedByFive(Integer number){
-        if(number %5 == 0){
+        if(number %5 == 0 || number.toString().contains("5")){
             return "Buzz";
         }
         else{
