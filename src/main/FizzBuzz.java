@@ -24,7 +24,7 @@ public class FizzBuzz implements FizzBuzzInterface {
     }
 
     private String numberDividedByThree(Integer number){
-        if(number %3 == 0){
+        if(number %3 == 0 || number.toString().contains("3")){
             return "Fizz";
         }
         else{
