@@ -19,4 +19,8 @@ public class FizzBuzz implements FizzBuzzInterface {
             return null;
         }
     }
+
+    public String testNumber(Integer number){
+        return null;
+    }
 }

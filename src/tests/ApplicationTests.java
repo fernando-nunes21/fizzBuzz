@@ -20,4 +20,8 @@ public class ApplicationTests extends TestCase {
     public void testBuzzNumberDividedByFive(){
         assertEquals("Buzz", new FizzBuzz().numberDividedByFive(10));
     }
+
+    public void testNumberNotFizzAndNotBuzz(){
+        assertEquals("2", new FizzBuzz().testNumber(2));
+    }
 }
