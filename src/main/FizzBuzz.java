@@ -21,6 +21,6 @@ public class FizzBuzz implements FizzBuzzInterface {
     }
 
     public String testNumber(Integer number){
-        return null;
+        return number.toString();
     }
 }
