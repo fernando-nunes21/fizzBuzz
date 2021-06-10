@@ -24,4 +24,12 @@ public class ApplicationTests extends TestCase {
     public void testNumberNotFizzAndNotBuzz(){
         assertEquals("2", new FizzBuzz().testNumber(2));
     }
+
+    public void testFizzBuzz(){
+        assertEquals("FizzBuzz", new FizzBuzz().testNumber(15));
+    }
+
+    public void testFizzNumberThreeInTheString(){
+        assertEquals("Fizz", new FizzBuzz().testNumber(83));
+    }
 }
