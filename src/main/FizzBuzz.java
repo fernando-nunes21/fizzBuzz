@@ -12,7 +12,7 @@ public class FizzBuzz implements FizzBuzzInterface {
     }
 
     public String numberDividedByFive(Integer number){
-        if(number == 5){
+        if(number %5 == 0){
             return "Buzz";
         }
         else{
