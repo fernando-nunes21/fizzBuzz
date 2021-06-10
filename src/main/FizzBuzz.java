@@ -4,17 +4,10 @@ public class FizzBuzz implements FizzBuzzInterface {
 
 
     public String testNumber(Integer number){
-        String resultDividedByThree;
-        String resultDividedByFive;
         String resultFinal="";
-        resultDividedByThree = numberDividedByThree(number);
-        resultDividedByFive = numberDividedByFive(number);
-        if(resultDividedByThree != null){
-            resultFinal = resultDividedByThree;
-        }
-        if(resultDividedByFive != null){
-            resultFinal = resultFinal + resultDividedByFive;
-        }
+        resultFinal = numberDividedByThree(number);
+        resultFinal += numberDividedByFive(number);
+
         if(resultFinal.equals("")){
             return number.toString();
         }
@@ -28,7 +21,7 @@ public class FizzBuzz implements FizzBuzzInterface {
             return "Fizz";
         }
         else{
-            return null;
+            return "";
         }
     }
 
@@ -37,7 +30,7 @@ public class FizzBuzz implements FizzBuzzInterface {
             return "Buzz";
         }
         else{
-            return null;
+            return "";
         }
     }
 
