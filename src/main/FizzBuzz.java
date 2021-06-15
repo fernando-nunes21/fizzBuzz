@@ -5,8 +5,8 @@ public class FizzBuzz implements FizzBuzzInterface {
 
     public String testNumber(Integer number){
         String resultFinal="";
-        resultFinal = numberDividedByThree(number);
-        resultFinal += numberDividedByFive(number);
+        resultFinal = numberDivisibleByThree(number);
+        resultFinal += numberDivisibledByFive(number);
 
         if(resultFinal.equals("")){
             return number.toString();
@@ -16,7 +16,7 @@ public class FizzBuzz implements FizzBuzzInterface {
         }
     }
 
-    private String numberDividedByThree(Integer number){
+    private String numberDivisibleByThree(Integer number){
         if(number %3 == 0 || number.toString().contains("3")){
             return "Fizz";
         }
@@ -25,7 +25,7 @@ public class FizzBuzz implements FizzBuzzInterface {
         }
     }
 
-    private String numberDividedByFive(Integer number){
+    private String numberDivisibledByFive(Integer number){
         if(number %5 == 0 || number.toString().contains("5")){
             return "Buzz";
         }

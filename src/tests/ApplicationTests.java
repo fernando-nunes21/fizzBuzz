@@ -5,39 +5,39 @@ import main.FizzBuzz;
 
 public class ApplicationTests extends TestCase {
 
-    public void testFizz() {
+    public void inputThreeShouldReturnFizz() {
         assertEquals("Fizz", new FizzBuzz().testNumber(3));
     }
 
-    public void testFizzNumberDivisibleByThree() {
+    public void inputSixShouldReturnFizz() {
         assertEquals("Fizz", new FizzBuzz().testNumber(6));
     }
 
-    public void testBuzz() {
+    public void inputFiveShouldReturnBuzz() {
         assertEquals("Buzz", new FizzBuzz().testNumber(5));
     }
 
-    public void testBuzzNumberDivisibleByFive(){
+    public void inputTenShouldReturnBuzz(){
         assertEquals("Buzz", new FizzBuzz().testNumber(10));
     }
 
-    public void testNumberNotFizzAndNotBuzz(){
+    public void inputTwoShouldReturnTwo(){
         assertEquals("2", new FizzBuzz().testNumber(2));
     }
 
-    public void testFizzBuzz(){
+    public void inputNumberDivisibleByThreeAndFiveShouldReturnFizzBuzz(){
         assertEquals("FizzBuzz", new FizzBuzz().testNumber(15));
     }
 
-    public void testFizzNumberThreeInTheString(){
+    public void inputNumberContainsThreeShouldReturnFizz(){
         assertEquals("Fizz", new FizzBuzz().testNumber(83));
     }
 
-    public void testBuzzNumberFiveInTheString(){
+    public void inputNumberContainsFiveShouldReturnBuzz(){
         assertEquals("Buzz", new FizzBuzz().testNumber(52));
     }
 
-    public void testFizzBuzzDivisibleAndNotDivisible(){
+    public void inputNumberContainsFiveAndAreDivisibleByThreeShouldReturnFizzBuzz(){
         assertEquals("FizzBuzz", new FizzBuzz().testNumber(156));
     }
 }
