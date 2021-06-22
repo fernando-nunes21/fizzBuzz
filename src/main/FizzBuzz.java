@@ -1,23 +1,22 @@
 package main;
 
-public class FizzBuzz implements FizzBuzzInterface {
+public class FizzBuzz{
 
-
-    public String testNumber(Integer number){
-        String resultFinal="";
-        resultFinal = numberDivisibleByThree(number);
-        resultFinal += numberDivisibledByFive(number);
+    public String returnFizzBuzz(Integer inputValue){
+        String resultFinal;
+        resultFinal = getFizzByInputNumber(inputValue);
+        resultFinal += getBUzzByInputNumber(inputValue);
 
         if(resultFinal.equals("")){
-            return number.toString();
+            return inputValue.toString();
         }
         else{
             return resultFinal;
         }
     }
 
-    private String numberDivisibleByThree(Integer number){
-        if(number %3 == 0 || number.toString().contains("3")){
+    private String getFizzByInputNumber(Integer input){
+        if(input %3 == 0 || input.toString().contains("3")){
             return "Fizz";
         }
         else{
@@ -25,8 +24,8 @@ public class FizzBuzz implements FizzBuzzInterface {
         }
     }
 
-    private String numberDivisibledByFive(Integer number){
-        if(number %5 == 0 || number.toString().contains("5")){
+    private String getBUzzByInputNumber(Integer input){
+        if(input %5 == 0 || input.toString().contains("5")){
             return "Buzz";
         }
         else{

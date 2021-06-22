@@ -8,47 +8,49 @@ import static org.junit.Assert.assertEquals;
 public class ApplicationTests {
 
     @Test
-    public void inputThreeShouldReturnFizz() {
-        assertEquals("Fizz", new FizzBuzz().testNumber(3));
+    public void inputNumberThreeShouldReturnFizz() {
+        assertEquals("Fizz", new FizzBuzz().returnFizzBuzz(3));
     }
 
     @Test
-    public void inputSixShouldReturnFizz() {
-        assertEquals("Fizz", new FizzBuzz().testNumber(6));
+    public void inputNumberSixShouldReturnFizz() {
+        assertEquals("Fizz", new FizzBuzz().returnFizzBuzz(6));
     }
 
     @Test
-    public void inputFiveShouldReturnBuzz() {
-        assertEquals("Buzz", new FizzBuzz().testNumber(5));
+    public void inputNumberFiveShouldReturnBuzz() {
+        assertEquals("Buzz", new FizzBuzz().returnFizzBuzz(5));
     }
 
     @Test
-    public void inputTenShouldReturnBuzz(){
-        assertEquals("Buzz", new FizzBuzz().testNumber(10));
+    public void inputNumberTenShouldReturnBuzz(){
+        assertEquals("Buzz", new FizzBuzz().returnFizzBuzz(10));
     }
 
     @Test
-    public void inputTwoShouldReturnTwo(){
-        assertEquals("2", new FizzBuzz().testNumber(2));
+    public void inputNumberTwoShouldReturnTwo(){
+        assertEquals("2", new FizzBuzz().returnFizzBuzz(2));
     }
 
     @Test
-    public void inputNumberDivisibleByThreeAndFiveShouldReturnFizzBuzz(){
-        assertEquals("FizzBuzz", new FizzBuzz().testNumber(15));
+    public void inputNumberFifteenShouldReturnFizzBuzz(){
+        assertEquals("FizzBuzz", new FizzBuzz().returnFizzBuzz(15));
     }
 
     @Test
     public void inputNumberContainsThreeShouldReturnFizz(){
-        assertEquals("Fizz", new FizzBuzz().testNumber(83));
+        assertEquals("Fizz", new FizzBuzz().returnFizzBuzz(83));
     }
 
     @Test
     public void inputNumberContainsFiveShouldReturnBuzz(){
-        assertEquals("Buzz", new FizzBuzz().testNumber(52));
+        assertEquals("Buzz", new FizzBuzz().returnFizzBuzz(52));
     }
 
     @Test
     public void inputNumberContainsFiveAndAreDivisibleByThreeShouldReturnFizzBuzz(){
-        assertEquals("FizzBuzz", new FizzBuzz().testNumber(156));
+        assertEquals("FizzBuzz", new FizzBuzz().returnFizzBuzz(156));
     }
+
+
 }
